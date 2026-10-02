@@ -57,14 +57,40 @@ for (let i = 1; i <= 15; i++) {
 }
 
 // ==========================================
-// Program 5: Array Traversal & Accumulator (While Loop)
+// practice problems
 // ==========================================
-const numbers = [12, 45, 78, 23, 56];
-let sum = 0;
-let index = 0;
 
-while (index < numbers.length) {
-  sum += numbers[index];
+//01
+
+let num = 28;
+
+if(num % 2 === 0) {
+    console.log("28 is Even")
+} else {
+    console.log("28 is Odd")
+}
+
+// 02
+
+for(let i = 10; i>=1; i--) {
+    if(i === 5) {
+        console.log("Halfway there!")
+    } else {
+        console.log(i);
+    }
+}
+
+//03
+
+const scores = [45, 89, 12, 95, 63, 77];
+let max = scores[0];
+let index = 1; // 'index' use kiya
+
+while (index < scores.length) {
+  if (scores[index] > max) {
+    max = scores[index];
+  }
   index++;
 }
-console.log("Total Sum of Array:", sum);
+
+console.log("Highest score is: " + max);
